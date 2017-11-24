@@ -1,4 +1,4 @@
-package nz.mikhailov.example.customer;
+package com.mt.app.customer;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

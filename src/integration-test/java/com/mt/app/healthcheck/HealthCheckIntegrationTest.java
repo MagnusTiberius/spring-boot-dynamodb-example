@@ -1,4 +1,4 @@
-package nz.mikhailov.example.healthcheck;
+package com.mt.app.healthcheck;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
