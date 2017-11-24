@@ -8,6 +8,7 @@ import com.amazonaws.services.dynamodbv2.model.DescribeTableResult;
 import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput;
 import com.amazonaws.services.dynamodbv2.model.ResourceNotFoundException;
 import com.mt.app.customer.Customer;
+import com.mt.app.inventory.InvItem;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -41,6 +42,17 @@ public class DatabaseInitialisation implements ApplicationListener<ContextRefres
       CreateTableResult result = dynamoDB.createTable(request);
       log.info("Table creation triggered {}, {}", request.getTableName(), result.getTableDescription().getTableStatus());
     }
+    
+    request = dbMapper
+            .generateCreateTableRequest(InvItem.class)
+            .withProvisionedThroughput(new ProvisionedThroughput(1L, 1L));
+    try {
+        DescribeTableResult result = dynamoDB.describeTable(request.getTableName());
+        log.info("Table status {}, {}", request.getTableName(), result.getTable().getTableStatus());
+      } catch (ResourceNotFoundException expectedException) {
+        CreateTableResult result = dynamoDB.createTable(request);
+        log.info("Table creation triggered {}, {}", request.getTableName(), result.getTableDescription().getTableStatus());
+      }
   }
 
 }
