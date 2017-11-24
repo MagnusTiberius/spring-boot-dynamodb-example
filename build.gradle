@@ -4,6 +4,8 @@ buildscript {
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.3.5.RELEASE")
+        classpath "se.transmode.gradle:gradle-docker:1.2"
+
     }
 }
 
@@ -12,6 +14,8 @@ plugins {
 }
 
 apply plugin: 'spring-boot'
+apply plugin: 'docker'
+
 
 repositories {
     jcenter()
@@ -45,3 +49,18 @@ task integrationTest(type: Test) {
     classpath = sourceSets.integrationTest.runtimeClasspath
     outputs.upToDateWhen { false }
 }
+
+
+task buildDocker(type: Docker) {
+  baseImage = 'openjdk:8-jdk-alpine'
+  push = project.hasProperty('push')
+  tag = 'magnustiberius/springbootdynamodb'
+  addFile {
+    from jar
+    rename {'app.jar'}
+  }
+  entryPoint(['java', '-Djava.security.egd=file:/dev/./urandom', '-jar', '/app.jar'])
+  // exposePort(8080)
+}
+
+buildDocker.dependsOn(build)
