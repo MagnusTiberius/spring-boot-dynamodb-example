@@ -8,8 +8,8 @@ import com.amazonaws.services.dynamodbv2.model.DescribeTableResult;
 import com.amazonaws.services.dynamodbv2.model.ResourceNotFoundException;
 import com.amazonaws.services.dynamodbv2.model.TableDescription;
 import com.amazonaws.services.dynamodbv2.model.TableStatus;
-import nz.mikhailov.example.customer.Customer;
-import nz.mikhailov.example.util.DatabaseInitialisation;
+import com.mt.app.customer.Customer;
+import com.mt.app.util.DatabaseInitialisation;
 
 import org.junit.Before;
 import org.junit.Test;

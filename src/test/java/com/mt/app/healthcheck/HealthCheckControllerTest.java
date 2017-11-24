@@ -2,7 +2,7 @@ package com.mt.app.healthcheck;
 
 import org.junit.Test;
 
-import nz.mikhailov.example.healthcheck.HealthCheckController;
+import com.mt.app.healthcheck.HealthCheckController;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;

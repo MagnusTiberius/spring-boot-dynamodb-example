@@ -6,9 +6,9 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 
-import nz.mikhailov.example.customer.Customer;
-import nz.mikhailov.example.customer.CustomerRepository;
-import nz.mikhailov.example.customer.CustomerService;
+import com.mt.app.customer.Customer;
+import com.mt.app.customer.CustomerRepository;
+import com.mt.app.customer.CustomerService;
 
 import java.util.List;
 import java.util.Optional;

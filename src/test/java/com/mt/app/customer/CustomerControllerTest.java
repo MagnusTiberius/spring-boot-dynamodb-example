@@ -11,9 +11,9 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-import nz.mikhailov.example.customer.Customer;
-import nz.mikhailov.example.customer.CustomerController;
-import nz.mikhailov.example.customer.CustomerService;
+import com.mt.app.customer.Customer;
+import com.mt.app.customer.CustomerController;
+import com.mt.app.customer.CustomerService;
 
 import java.util.List;
 import java.util.Optional;

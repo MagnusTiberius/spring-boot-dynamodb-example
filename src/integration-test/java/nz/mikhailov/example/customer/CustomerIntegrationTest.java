@@ -1,6 +1,5 @@
 package nz.mikhailov.example.customer;
 
-import nz.mikhailov.example.Application;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Value;
@@ -11,6 +10,9 @@ import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.web.client.RestTemplate;
+
+import com.mt.app.Application;
+import com.mt.app.customer.Customer;
 
 import java.net.URI;
 

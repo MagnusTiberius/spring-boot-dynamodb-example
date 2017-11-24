@@ -1,4 +1,4 @@
-package nz.mikhailov.example;
+package com.mt.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package nz.mikhailov.example.healthcheck;
+package com.mt.app.healthcheck;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

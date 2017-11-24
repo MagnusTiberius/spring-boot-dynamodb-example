@@ -1,4 +1,4 @@
-package nz.mikhailov.example.customer;
+package com.mt.app.customer;
 
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperConfig;

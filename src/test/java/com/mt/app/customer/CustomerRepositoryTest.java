@@ -4,9 +4,8 @@ import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapperConfig;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBScanExpression;
 import com.amazonaws.services.dynamodbv2.datamodeling.PaginatedScanList;
-
-import nz.mikhailov.example.customer.Customer;
-import nz.mikhailov.example.customer.CustomerRepository;
+import com.mt.app.customer.Customer;
+import com.mt.app.customer.CustomerRepository;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

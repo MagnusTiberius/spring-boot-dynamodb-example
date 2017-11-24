@@ -1,4 +1,4 @@
-package nz.mikhailov.example.customer;
+package com.mt.app.customer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
