@@ -1,4 +1,4 @@
-package nz.mikhailov.example.util;
+package com.mt.app.util;
 
 import com.amazonaws.services.dynamodbv2.AmazonDynamoDB;
 import com.amazonaws.services.dynamodbv2.datamodeling.DynamoDBMapper;
@@ -9,6 +9,8 @@ import com.amazonaws.services.dynamodbv2.model.ResourceNotFoundException;
 import com.amazonaws.services.dynamodbv2.model.TableDescription;
 import com.amazonaws.services.dynamodbv2.model.TableStatus;
 import nz.mikhailov.example.customer.Customer;
+import nz.mikhailov.example.util.DatabaseInitialisation;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

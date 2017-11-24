@@ -1,6 +1,8 @@
-package nz.mikhailov.example.healthcheck;
+package com.mt.app.healthcheck;
 
 import org.junit.Test;
+
+import nz.mikhailov.example.healthcheck.HealthCheckController;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;

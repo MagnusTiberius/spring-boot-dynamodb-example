@@ -1,4 +1,4 @@
-package nz.mikhailov.example.customer;
+package com.mt.app.customer;
 
 import org.hamcrest.Description;
 import org.hamcrest.Matcher;
@@ -10,6 +10,10 @@ import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+
+import nz.mikhailov.example.customer.Customer;
+import nz.mikhailov.example.customer.CustomerController;
+import nz.mikhailov.example.customer.CustomerService;
 
 import java.util.List;
 import java.util.Optional;

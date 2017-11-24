@@ -1,10 +1,14 @@
-package nz.mikhailov.example.customer;
+package com.mt.app.customer;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
+
+import nz.mikhailov.example.customer.Customer;
+import nz.mikhailov.example.customer.CustomerRepository;
+import nz.mikhailov.example.customer.CustomerService;
 
 import java.util.List;
 import java.util.Optional;
